@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Лаба 4 Машина</title>
+    <style type="text/css">
+        .widthimg
+        {
+            width:100%;
+            height:100%;
+            display: block;
+        }
+        .mar0pad0
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        #header{
+            position: relative;
+            background:black;
+            height:60px;
+            width: 100%;
+            display: flex;
+        }
+
+        #header1{
+            position: absolute;
+            width: 100%;
+            font-size:30px;
+            color:white;
+            left:1%;
+        }
+
+        #leftheader{
+            line-height: 2em;
+            width: 25%;
+            float: left;
+        }
+
+        .butt{
+            position: relative;
+            color: white;
+            float: left;
+            margin: 10px;
+            width: 10%;
+            text-align: center;
+            border:1px solid white;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+        #logo{   
+            width: 80px;
+            height: 70px;
+            position: absolute;
+            right: 3%;
+        }
+
+        #box{
+            background: rgb(1, 1, 1, 0.1); 
+            width: 30%;
+            border-radius: 50px 50px;
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            border:2px solid white;
+            height: 25%; 
+            color: black;
+        }
+        h1{
+            font-weight: normal;
+            position: relative;
+            top: 2.5px;
+            left: 80px;
+            font-size:25px;
+        }
+        .text{
+            top: 10px;
+            left: 10px;
+            position: relative; 
+            text-align: left;
+            font-size:20px;
+        }
+
+        #icon{
+            width: 100%;
+            margin-top: -8%;
+            z-index:1;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+
+        .block{
+            position: relative;
+            width: 12%;
+            height:300px;
+            text-align: center;
+            padding: 2px;
+            margin:  0px 10px;
+            border:2px solid black;
+            background:white;
+            border-radius: 40px;
+            font-size:25px;
+        }
+
+        .textblock{
+            left: 5%;
+            right: 5%;
+            position: absolute;
+            top: 20%;
+            font-size:20px;
+        }
+
+        .butt2{
+            color: black;
+            position: absolute;
+            top: 78%;
+            left: 20%;
+            width: 50%;
+            border:1px solid black;
+            padding: 5% ;
+            border-radius: 5px;
+            font-size:20px;
+        }
+
+        .foot{
+            color: white;
+            font-size:14px;
+            background-color: white;
+            width: 100%;
+            height: 70px;
+            position: relative; 
+            bottom: 15px; 
+        }
+
+        .text2{
+            position: absolute;
+            left: 1%;
+        }
+
+        .gm{
+            position: absolute;
+            right: 1%;
+        }
+               
+        @media screen and (max-width: 1024px)
+        {
+        .widthimg
+        {
+            width:100%;
+            height:100%;
+            display: block;
+        }
+        .mar0pad0
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        #header{
+            height:150px;
+        }
+        #header1{
+            left: 2%;
+            top: 20%;
+            font-size:30px;
+        }
+        #leftheader{
+            width: 18%;
+        }
+        .butt{
+            height: 50px;
+            margin: 7px;
+            width: 13%;
+        }
+        #logo{   
+            width: 85px;
+            height: 85px;
+            right: 4%;
+        }
+        #box{ 
+            width: 35%;
+            left:  5%;
+            height: 30%; 
+        }
+        h1{
+            left: 10px;
+            font-size:30px;
+        }
+
+        .text{
+            font-size:23px;
+        }
+        .block{
+            width: 20%;
+            margin:  0px 12px;
+        }
+        .textblock{
+            top: 45%;
+            font-size:15px;
+        }
+
+        .butt2{
+            top: 77%;
+            font-size:23px;
+        }
+        #foot{
+            font-size:18px;
+            height: 50px;
+        }
+        }
+
+
+
+        @media screen and (max-width: 768px)
+        {
+             .widthimg
+        {
+            width:100%;
+            height:100%;
+            display: block;
+        }
+        .mar0pad0
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        #header{
+            height:130px;
+        }
+        #header1{
+            top: 37%;
+            font-size:27px;
+        }
+        #leftheader{
+            width: 10%;
+        }
+        .butt{
+            height: 40px;
+            margin: 6px;
+            width: 15%;
+        }
+        #logo{   
+            width: 70px;
+            height: 70px;
+            right: 2%;
+        }
+        #box{ 
+            width: 33%;
+            left:  7%;
+            height: 25%; 
+        }
+        h1{
+            font-size:32px;
+        }
+        .text{
+            font-size:25px;
+        }
+        .block{
+            width: 17%;
+            margin:  0px 10px;
+        }
+        .textblock{
+            top: 42%;
+            font-size:15px;
+        }
+        .butt2{
+            top: 75%;
+            font-size:23px;
+        }
+        #foot{
+            font-size:20px;
+            height: 90px;
+        }
+        }
+        @media screen and (max-width: 425px)
+        {
+             .widthimg
+        {
+            width:100%;
+            height:400px;
+            display: block;
+        }
+        .mar0pad0
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        #header{
+            height:40px;
+        }
+        #header1{
+            top: 7%;
+            font-size:14px;
+        }
+        #leftheader{
+            width: 10%;
+        }
+        .butt{
+            height: 20px;
+            margin: 7px;
+            width: 13%;
+        }
+        #logo{   
+            width: 35px;
+            height: 35px;
+            right: 1%;
+        }
+        #box{ 
+            width: 33%;
+            left:  7%;
+            height: 10%; 
+        }
+        h1{
+            font-size:14px;
+            top:30%;
+        }
+        .text{
+            font-size:10px;
+            top:-20%;
+            left: 5%;
+        }
+        .block{
+            height:200px;
+            width: 20%;
+            margin:  0px 5px;
+        }
+        .textblock{
+            top: 40%;
+            font-size:10px;
+        }
+        .butt2{
+            top: 80%;
+            font-size:13px;
+        }
+        #foot{
+            font-size:9px;
+            height: 90px;
+        }
+        }
+    </style>
+</head>
+
+<body class="mar0pad0">
+<div id="header">
+    <div id="header1">
+        <div id="leftheader">Меню</div>
+        <div class="butt">Кнопка</div> 
+        <div class="butt">Кнопка</div>
+        <div class="butt">Кнопка</div>
+        <div class="butt">Кнопка</div>
+        <div>
+            <img src="img/img3.png" id="logo">
+        </div>
+</div>
+</div>
+<div>
+<img class="widthimg" src="img/img.jpeg">
+         <div id="box">
+            <h1>2021 LAND CRUISER
+Wander with style.</h1><br>
+             <p class="text">The 2021 Toyota Land Cruiser has earned a loyal following from around the world. The product of over 60 years of global adventures, it's a sophisticated blend of off-road prowess, 91 on-road comfort and unparalleled refinement. </p>
+        </div>
+</div>
+<div id="icon">
+        <div class="block"><div class="textblock">LAND CRUISER 200 ЭЛЕГАНС - ФЛАГМАНСКИЙ (РАМНЫЙ) ВНЕДОРОЖНИК</div><div class="butt2">Кнопка</div></div>
+        <div class="block"><div class="textblock">LAND CRUISER 200 ЭЛЕГАНС - ФЛАГМАНСКИЙ (РАМНЫЙ) ВНЕДОРОЖНИК</div><div class="butt2">Кнопка</div></div>
+        <div class="block"><div class="textblock">LAND CRUISER 200 ЭЛЕГАНС - ФЛАГМАНСКИЙ (РАМНЫЙ) ВНЕДОРОЖНИК</div><div class="butt2">Кнопка</div></div>
+        <div class="block"><div class="textblock">LAND CRUISER 200 ЭЛЕГАНС - ФЛАГМАНСКИЙ (РАМНЫЙ) ВНЕДОРОЖНИК</div><div class="butt2">Кнопка</div></div>
+</div>
+<div>
+<img class="widthimg" src="img/img2.jpg">
+</div>
+<div id="foot">
+    <p class="text2">Контакты:</p><br>
+    <p class="text2">Тел: +38095 666 66 66</p><br>
+    <p class="text2">ул.Центральная</p><br>
+    <p class="gm">Toyota@icloud.com</p>
+</div>
+</body>
+</html>
